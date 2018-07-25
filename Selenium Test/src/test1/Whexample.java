@@ -20,7 +20,7 @@ public class Whexample {
 			}
 		}}
 	public static void main(String[] args) {
-		WebDriver d = new ChromeDrivers();
+		WebDriver d = new ChromeDriver();
 		d.get("http://naukri.in");
 		d.manage().window().maximize();
 		Whexample obj = new Whexample();

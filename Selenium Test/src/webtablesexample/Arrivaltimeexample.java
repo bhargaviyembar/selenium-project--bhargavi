@@ -15,31 +15,32 @@ public class Arrivaltimeexample {
 		d.get("https://www.cleartrip.com/trains/14553");
 		java.util.List<WebElement> ros= d.findElements(By.xpath("//table[@class='results']/tbody/tr"));
 		int count=ros.size();
-		//WebElement el= d.findElement(By.linkText(""))
-		//Select sel = new Select();
-		
-		//List<WebElement> items = sel.getOptions();
+
 		for (int i = 1; i <=count; i++) {
 			java.util.List<WebElement> col=d.findElements(By.xpath("//table[@class='results']/tbody/tr["+i+"]/td"));
 			int count2=col.size();
 			for (int j = 1; j <=count2; j++) { 
 				
 				WebElement ele=d.findElement(By.xpath("//table[@class='results']/tbody/tr["+i+"]/td["+j+"]"));
-				Select sel = new Select(ele);
-				List<WebElement> items = sel.getOptions();
-				//if ((items.get(i).getText())==(items.get(j).getText()).equals("Sonipat")) {
-					System.out.print("Sonipat");
+				String stationname = ele.getText();
+				if (stationname.equals("Sonipat(SNP)")) {
+					System.out.print(stationname);
 					System.out.print("--");
+					
+					d.findElement(By.xpath("//table[@class='results']/tbody/tr["+i+"]/td[5]"));
+					d.findElement(By.xpath("//table[@class='results']/tbody/tr["+i+"]/td[6]"));
 					break;
-				} else if (i == (items.size() - 1) && !items.get(i).getText().equals("Sonipat")) {
-					System.out.println("Sonipat not found");
-				System.out.print(ele.getText());
-				System.out.print("--");
+				
+				
 			}
-			System.out.println();
+			
+			System.out.print(stationname);
+			System.out.print("--");
 		}	
+			System.out.println();
+			
+			
 	}
 	
-	
-}
+	}}
 
