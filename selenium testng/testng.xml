@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="verify google page">
+   <test name="TC01">
+    <classes>
+      <class name="testng.Testngexample"/>
+    </classes>
+  </test>
+  <test name="indiasearchbox">
+    <classes>
+      <class name="testng.Test1"/>
+    </classes>
+  </test>
+  
+  <test name="Seleniumhqsearch">
+    <classes>
+      <class name="testng.Testingppconditions"/>
+    </classes>
+  </test>
+  
+</suite> 

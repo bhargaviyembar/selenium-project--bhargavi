@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [google_page_search]">
+  <test thread-count="5" name="seleniumhqsearch(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testng.Testingppconditions">
+        <methods>
+          <include name="seleniumhqsearch"/>
+        </methods>
+      </class> <!-- testng.Testingppconditions -->
+      <class name="testng2.Groupingtestngexample">
+        <methods>
+          <include name="laptopssearch"/>
+        </methods>
+      </class> <!-- testng2.Groupingtestngexample -->
+    </classes>
+  </test> <!-- seleniumhqsearch(failed) -->
+</suite> <!-- Failed suite [google_page_search] -->

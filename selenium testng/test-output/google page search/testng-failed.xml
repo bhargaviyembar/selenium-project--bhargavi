@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [google page search]" parallel="tests">
+  <test thread-count="5" name="parameter(failed)" parallel="tests">
+    <parameter name="title1" value="India - Google search"/>
+    <parameter name="title2" value="india"/>
+    <parameter name="title3" value="Google"/>
+    <classes>
+      <class name="testng2.Parameterexample">
+        <methods>
+          <include name="titlesearch" invocation-numbers="0"/>
+          <include name="openurl" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testng2.Parameterexample -->
+    </classes>
+  </test> <!-- parameter(failed) -->
+  <test thread-count="5" name="parallel search(failed)" parallel="tests">
+    <classes>
+      <class name="testng.Prepostconditions">
+        <methods>
+          <include name="exit"/>
+        </methods>
+      </class> <!-- testng.Prepostconditions -->
+    </classes>
+  </test> <!-- parallel search(failed) -->
+</suite> <!-- Failed suite [google page search] -->

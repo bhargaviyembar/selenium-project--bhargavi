@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="google_page_search" duration-ms="72053" started-at="2018-07-27T06:31:07Z" finished-at="2018-07-27T06:32:19Z">
+    <groups>
+      <group name="smoke">
+        <method signature="Groupingtestngexample.laptopssearch()[pri:0, instance:testng2.Groupingtestngexample@7133da86]" name="laptopssearch" class="testng2.Groupingtestngexample"/>
+        <method signature="Prepostconditions.setup()[pri:0, instance:testng.Prepostconditions@3232a28a]" name="setup" class="testng.Prepostconditions"/>
+        <method signature="Prepostconditions.setup()[pri:0, instance:testng2.Groupingtestngexample@7133da86]" name="setup" class="testng.Prepostconditions"/>
+        <method signature="Testingppconditions.seleniumhqsearch()[pri:0, instance:testng.Testingppconditions@4d465b11]" name="seleniumhqsearch" class="testng.Testingppconditions"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="seleniumhqsearch" duration-ms="72053" started-at="2018-07-27T06:31:07Z" finished-at="2018-07-27T06:32:19Z">
+      <class name="testng.Testingppconditions">
+        <test-method status="PASS" signature="seleniumhqsearch()[pri:0, instance:testng.Testingppconditions@4d465b11]" name="seleniumhqsearch" duration-ms="21436" started-at="2018-07-27T06:31:47Z" depends-on-methods="testng2.Groupingtestngexample.laptopssearch" finished-at="2018-07-27T06:32:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seleniumhqsearch -->
+      </class> <!-- testng.Testingppconditions -->
+      <class name="testng.Prepostconditions">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testng.Prepostconditions@3232a28a]" name="setup" duration-ms="17249" started-at="2018-07-27T06:31:07Z" finished-at="2018-07-27T06:31:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- testng.Prepostconditions -->
+      <class name="testng2.Groupingtestngexample">
+        <test-method status="PASS" signature="laptopssearch()[pri:0, instance:testng2.Groupingtestngexample@7133da86]" name="laptopssearch" duration-ms="22481" started-at="2018-07-27T06:31:24Z" finished-at="2018-07-27T06:31:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- laptopssearch -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testng2.Groupingtestngexample@7133da86]" name="setup" duration-ms="10849" started-at="2018-07-27T06:32:08Z" finished-at="2018-07-27T06:32:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- testng2.Groupingtestngexample -->
+    </test> <!-- seleniumhqsearch -->
+  </suite> <!-- google_page_search -->
+</testng-results>

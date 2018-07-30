@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="google_page_search" parallel="tests">
+	<test name="parallelexecution">
+	
+	<parameter name="title1" value="india - Google Search">
+	</parameter>
+	<parameter name="title2" value="india">
+	</parameter>
+	<parameter name="title3" value="Google">
+	</parameter>
+	<classes>
+      <class name="testng2.Parameterexample">
+	
+	</class>
+	</classes>
+	</test>
+	<test name="parallel search">
+	<classes>
+	<class name="testng.Testngexample" />
+	</classes>
+	</test>
+</suite> 

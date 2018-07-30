@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="google_page_search">
+	<groups>
+		<run>
+			<include name="smoke">
+			</include>
+		</run>
+	</groups>
+	<!-- <test name="Laptopssearch"> 
+	<classes>
+	<class name="testng2.Groupingtestngexample"/> 
+		 </classes>
+		 </test> -->
+		 <test name="seleniumhqsearch"> 
+	<classes>
+	 
+	<class name="testng.Testingppconditions"/>
+	<class name="testng.Prepostconditions"/>
+	<class name="testng2.Groupingtestngexample"/> 
+	 
+		 </classes>
+		 </test>
+</suite> 
